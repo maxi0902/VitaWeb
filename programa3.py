@@ -282,7 +282,7 @@ edad = st.sidebar.number_input(
     "Edad del cliente:",
     min_value=18,
     max_value=100,
-    value=0,
+    value=30,
     step=1
 )
 
@@ -291,7 +291,7 @@ ano_del_vehiculo = st.sidebar.number_input(
     "Año del vehículo:",
     min_value=1990,
     max_value=2025,
-    value=0,
+    value=2020,
     step=1
 )
 
@@ -299,7 +299,7 @@ ano_del_vehiculo = st.sidebar.number_input(
 valor_de_venta = st.sidebar.number_input(
     "Valor de venta (en $):",
     min_value=100000,
-    value=0,
+    value=15000000,
     step=100000
 )
 
@@ -307,7 +307,7 @@ valor_de_venta = st.sidebar.number_input(
 pie = st.sidebar.number_input(
     "Pie (en $):",
     min_value=0,
-    value=0,
+    value=3000000,
     step=100000
 )
 
@@ -315,7 +315,7 @@ pie = st.sidebar.number_input(
 renta_liquida = st.sidebar.number_input(
     "Renta líquida (en $):",
     min_value=0,
-    value=0,
+    value=800000,
     step=50000
 )
 
