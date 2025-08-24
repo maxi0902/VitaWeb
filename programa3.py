@@ -1,6 +1,6 @@
 import streamlit as st
 from datetime import date
-
+#CAMBIAR LOS COLORES DE MODO CLARO, COLOCAR % AL MONTO DE PIE, REVISAR PORQUE NO SALE AUTOFIN
 st.markdown("""
 <style>
     /* Estilo del cuerpo de la página */
@@ -369,4 +369,5 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
