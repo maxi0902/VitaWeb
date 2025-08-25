@@ -38,7 +38,7 @@ st.markdown("""
     /* Estilos generales para ambos modos */
     body {
         color: #2e4053; /* Color de texto base (azul oscuro) */
-        background-color: #f2f2f2; /* Color de fondo claro */
+        background-color: #f2f2f2; /* Fondo de claro */
     }
 
     /* Estilo para los títulos (h1, h2, h3) */
@@ -331,12 +331,14 @@ tiene_auto = st.sidebar.selectbox(
     ["Sí", "No"]
 ) == "Sí"
 
-# Calcula el monto a financiar y el porcentaje de pie después de que todos los inputs han sido definidos.
+# --- Sección para mostrar cálculos ---
+# Se calcula y muestra el monto a financiar y el porcentaje de pie
+# DESPUÉS de haber definido todos los campos de entrada en la barra lateral.
 monto_a_financiar = valor_de_venta - pie
 pie_porcentaje = (pie / valor_de_venta) * 100 if valor_de_venta > 0 else 0
 
-st.sidebar.write(f"**Pie:** {pie_porcentaje:.2f}%")
 st.sidebar.write(f"**Monto a financiar (automático):** ${monto_a_financiar:,.0f}")
+st.sidebar.write(f"**Pie (%):** {pie_porcentaje:.2f}%")
 
 cliente = {
     "edad": edad,
