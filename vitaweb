@@ -302,14 +302,13 @@ valor_de_venta = st.sidebar.number_input(
     value=15000000,
     step=100000
 )
-
+porcentaje = (pie / renta_liquida) x 100
 # Pie
 pie = st.sidebar.number_input(
-    "Pie (en $):",
+    f"Pie (en $) y en % {porcentaje}:",
     min_value=0,
     value=3000000,
     step=100000,
-    porcentaje
 )
 
 # Renta líquida
@@ -331,7 +330,6 @@ tiene_auto = st.sidebar.selectbox(
     "¿Tiene auto a su nombre?:",
     ["Sí", "No"]
 ) == "Sí"
-porcentaje = (pie / renta_liquida) x 100
 
 monto_a_financiar = valor_de_venta - pie
 
@@ -348,7 +346,6 @@ cliente = {
     "tiene_casa": tiene_casa,
     "tiene_auto": tiene_auto,
     "pie_porcentaje": pie / valor_de_venta if valor_de_venta > 0 else 0
-    "% de Pie": porcentaje
 }
 
 
@@ -372,6 +369,7 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
 
 
