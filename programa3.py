@@ -85,8 +85,8 @@ st.markdown("""
     }
     /* 🟢 ESTILO ESPECÍFICO PARA EL MENSAJE DE ÉXITO (EL CUADRO VERDE) 🟢 */
     div[data-testid="stAlert"] {
-        background-color: #0DC900 !important; /* Un verde claro menos intenso */
-        color: #0DC900 !important; /* Un verde más oscuro para el texto */
+        background-color: #4caf50 !important; /* Un verde claro menos intenso */
+        color: #000000 !important; /* Un verde más oscuro para el texto */
     }
     /* 🟢 ESTILO DE MENSAJE DE ÉXITO EN MODO OSCURO 🟢 */
         div[data-testid="stAlert"] {
@@ -369,5 +369,6 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
 
