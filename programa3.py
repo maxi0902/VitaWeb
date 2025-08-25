@@ -81,12 +81,12 @@ st.markdown("""
 
     /* Cambia el color de los números en los inputs del sidebar */
     .st-emotion-cache-q0n6l8, .st-emotion-cache-116h11g {
-        color: #1a5276 !important;
+        color: #000000 !important;
     }
     /* 🟢 ESTILO ESPECÍFICO PARA EL MENSAJE DE ÉXITO (EL CUADRO VERDE) 🟢 */
     div[data-testid="stAlert"] {
         background-color: #4caf50 !important; /* Un verde claro menos intenso */
-        color: #000000 !important; /* Un verde más oscuro para el texto */
+        color: #f2f2f2 !important; /* Un verde más oscuro para el texto */
     }
     /* 🟢 ESTILO DE MENSAJE DE ÉXITO EN MODO OSCURO 🟢 */
         div[data-testid="stAlert"] {
@@ -374,3 +374,4 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
