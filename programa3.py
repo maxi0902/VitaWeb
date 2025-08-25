@@ -101,15 +101,7 @@ st.markdown("""
 
 # ======================================================================
 # LOGICA DE VALIDACION BASADA EN TABLAS
-# ======================================================================
-#Perfil financiero:  
-##Año del vehículo:  
-#Valor de venta:  
-#Pie:  
-#Monto a financiar:  
-#¿Acredita ingresos?:  
-
-
+# ======================================================================  
 def obtener_opciones_viables(cliente):
     opciones = {}
     
@@ -345,7 +337,6 @@ cliente = {
     "renta_liquida": renta_liquida,
     "tiene_casa": tiene_casa,
     "tiene_auto": tiene_auto,
-    "pie_porcentaje": pie / valor_de_venta if valor_de_venta > 0 else 0
 }
 
 
@@ -369,6 +360,7 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
 
 
