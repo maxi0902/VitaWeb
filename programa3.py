@@ -303,16 +303,11 @@ valor_de_venta = st.sidebar.number_input(
     step=100000
 )
 
-pie_porcentaje = (pie / valor_de_venta) * 100 if valor_de_venta > 0 else 0
-
-# Crea la etiqueta dinámica para el input
-pie_label = f"Pie (en $): {pie_porcentaje:.2f}%"
-
 pie = st.sidebar.number_input(
-    pie_label,
+    "Pie (en $):"
     min_value=0,
     value=3000000,
-    step=100000,
+    step=100000
 )
 
 # Renta líquida
@@ -336,8 +331,9 @@ tiene_auto = st.sidebar.selectbox(
 ) == "Sí"
 
 monto_a_financiar = valor_de_venta - pie
-
+pie_porcentaje = (pie / valor_de_venta) * 100 if valor_de_venta > 0 else 0
 st.sidebar.write(f"**Monto a financiar (automático):** ${monto_a_financiar:,.0f}")
+st.sidebar.write(f"**Pie (automático):** {pie_porcentaje:.2f}%")
 
 cliente = {
     "edad": edad,
@@ -373,6 +369,7 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
 
 
