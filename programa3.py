@@ -327,7 +327,6 @@ monto_a_financiar = valor_de_venta - pie
 pie_porcentaje = (pie / valor_de_venta) * 100 if valor_de_venta > 0 else 0
 
 st.sidebar.write(f"**Pie:** {pie_porcentaje:.2f}%")
-st.sidebar.write(f"**Monto a financiar (automático):** ${monto_a_financiar:,.0f}")
 
 cliente = {
     "edad": edad,
@@ -363,6 +362,7 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
 
 
