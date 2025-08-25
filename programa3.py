@@ -102,6 +102,13 @@ st.markdown("""
 # ======================================================================
 # LOGICA DE VALIDACION BASADA EN TABLAS
 # ======================================================================
+#Perfil financiero:  
+##Año del vehículo:  
+#Valor de venta:  
+#Pie:  
+#Monto a financiar:  
+#¿Acredita ingresos?:  
+
 
 def obtener_opciones_viables(cliente):
     opciones = {}
@@ -303,6 +310,7 @@ pie = st.sidebar.number_input(
     value=3000000,
     step=100000
 )
+
 # Renta líquida
 renta_liquida = st.sidebar.number_input(
     "Renta líquida (en $):",
@@ -323,10 +331,12 @@ tiene_auto = st.sidebar.selectbox(
     ["Sí", "No"]
 ) == "Sí"
 
+# Calcula el monto a financiar y el porcentaje de pie después de que todos los inputs han sido definidos.
 monto_a_financiar = valor_de_venta - pie
 pie_porcentaje = (pie / valor_de_venta) * 100 if valor_de_venta > 0 else 0
 
 st.sidebar.write(f"**Pie:** {pie_porcentaje:.2f}%")
+st.sidebar.write(f"**Monto a financiar (automático):** ${monto_a_financiar:,.0f}")
 
 cliente = {
     "edad": edad,
@@ -362,10 +372,3 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
-
-
-
-
-
-
-
