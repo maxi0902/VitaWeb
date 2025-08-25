@@ -302,10 +302,14 @@ valor_de_venta = st.sidebar.number_input(
     value=15000000,
     step=100000
 )
-porcentaje = (pie / renta_liquida) x 100
-# Pie
+
+pie_porcentaje = (pie / valor_de_venta) * 100 if valor_de_venta > 0 else 0
+
+# Crea la etiqueta dinámica para el input
+pie_label = f"Pie (en $): {pie_porcentaje:.2f}%"
+
 pie = st.sidebar.number_input(
-    "asd (en $):",
+    pie_label,
     min_value=0,
     value=3000000,
     step=100000,
@@ -369,6 +373,7 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
 
 
