@@ -54,8 +54,8 @@ st.markdown("""
     /* Estilos específicos para el MODO OSCURO */
     @media (prefers-color-scheme: dark) {
         body {
-            color: #d6eaf8; /* Texto claro en modo oscuro */
-            background-color: #1c2833; /* Fondo oscuro en modo oscuro */
+            color: #f2f2f2; /* Texto claro en modo oscuro */
+            background-color: #f2f2f2; /* Fondo oscuro en modo oscuro */
         }
         
         .st-emotion-cache-1r4qj8m {
@@ -369,6 +369,7 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
 
 
