@@ -43,12 +43,12 @@ st.markdown("""
 
     /* Estilo para los títulos (h1, h2, h3) */
     h1, h2, h3, h4, h5, h6 {
-        color: #f2f2f2; /* Color azul más oscuro para títulos */
+        color: #F2F2F2; /* Color azul más oscuro para títulos */
     }
 
     /* Estilo para el texto dentro del expander/contenedor */
     .st-emotion-cache-1r4qj8m { /* Clase de Streamlit para el texto de st.write */
-        color: #f2f2f2; /* Color de texto oscuro para mayor legibilidad */
+        color: #F2F2F2; /* Color de texto oscuro para mayor legibilidad */
     }
 
     /* Estilos específicos para el MODO OSCURO */
@@ -374,4 +374,5 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
