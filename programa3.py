@@ -311,6 +311,10 @@ pie = st.sidebar.number_input(
     step=100000
 )
 
+if valor_de_venta > 0:
+    pie_porcentaje = (pie / valor_de_venta) * 100
+    st.sidebar.write(f"**Pie (%):** {pie_porcentaje:.2f}%")
+
 # Renta líquida
 renta_liquida = st.sidebar.number_input(
     "Renta líquida (en $):",
@@ -331,9 +335,7 @@ tiene_auto = st.sidebar.selectbox(
     ["Sí", "No"]
 ) == "Sí"
 
-# Calculate the financed amount
 monto_a_financiar = valor_de_venta - pie
-# Calculate the percentage of the down payment
 pie_porcentaje = (pie / valor_de_venta) * 100 if valor_de_venta > 0 else 0
 
 st.sidebar.write(f"**Pie:** {pie_porcentaje:.2f}%")
