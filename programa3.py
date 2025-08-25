@@ -265,7 +265,7 @@ def obtener_opciones_viables(cliente):
 
 # Logo
 st.image("assets/vita.jpg", width=400)
-st.title("Simulador de Crédito Automotriz")
+st.title("asd")
 
 st.sidebar.title("Datos del Cliente")
 st.sidebar.markdown("---")
@@ -369,6 +369,7 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
 
 
