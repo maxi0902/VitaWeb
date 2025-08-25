@@ -38,7 +38,7 @@ st.markdown("""
     /* Estilos generales para ambos modos */
     body {
         color: #2e4053; /* Color de texto base (azul oscuro) */
-        background-color: #f7f9f9; /* Color de fondo claro */
+        background-color: #f2f2f2; /* Color de fondo claro */
     }
 
     /* Estilo para los títulos (h1, h2, h3) */
@@ -369,6 +369,7 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
 
 
