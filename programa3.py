@@ -305,7 +305,7 @@ valor_de_venta = st.sidebar.number_input(
 porcentaje = (pie / renta_liquida) x 100
 # Pie
 pie = st.sidebar.number_input(
-    f"Pie (en $) y en % {porcentaje}:",
+    "asd (en $):",
     min_value=0,
     value=3000000,
     step=100000,
@@ -369,6 +369,7 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
 
 
