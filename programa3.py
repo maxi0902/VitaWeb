@@ -295,13 +295,6 @@ valor_de_venta = st.sidebar.number_input(
     step=100000
 )
 
-pie = st.sidebar.number_input(
-    "Pie en $:",
-    min_value=0,
-    value=3000000,
-    step=100000
-)
-
 # Renta líquida
 renta_liquida = st.sidebar.number_input(
     "Renta líquida (en $):",
@@ -360,6 +353,7 @@ else:
     st.error("Lo siento, tu cliente no cumple con los requisitos para ninguna financiera.")
 
     st.info("Intenta ajustar los datos del cliente para ver si califica en alguna opción.")
+
 
 
 
